@@ -9,13 +9,13 @@
 
     <cache alias="customer">
     <key-type>java.lang.Long</key-type>
-    <value-type>com.javadevjournal.data.Customer</value-type>
+    <value-type>com.nykaa.ehcache.data.Customer</value-type>
     <expiry>
         <ttl unit="minutes">5</ttl>
     </expiry>
     <listeners>
         <listener>
-            <class>com.javadevjournal.config.CustomCacheEventLogger</class>
+            <class>com.nykaa.ehcache.config.CustomCacheEventLogger</class>
             <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
             <event-ordering-mode>UNORDERED</event-ordering-mode>
             <events-to-fire-on>CREATED</events-to-fire-on>
@@ -38,7 +38,7 @@
         </expiry>
         <listeners>
             <listener>
-                <class>com.javadevjournal.config.CustomCacheEventLogger</class>
+                <class>com.nykaa.ehcache.config.CustomCacheEventLogger</class>
                 <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
                 <event-ordering-mode>UNORDERED</event-ordering-mode>
                 <events-to-fire-on>CREATED</events-to-fire-on>

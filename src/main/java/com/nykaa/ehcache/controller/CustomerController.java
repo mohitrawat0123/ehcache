@@ -1,7 +1,7 @@
-package com.javadevjournal.controller;
+package com.nykaa.ehcache.controller;
 
-import com.javadevjournal.data.Customer;
-import com.javadevjournal.service.CustomerService;
+import com.nykaa.ehcache.data.Customer;
+import com.nykaa.ehcache.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.http.ResponseEntity;

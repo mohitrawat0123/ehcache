@@ -1,4 +1,4 @@
-package com.javadevjournal.config;
+package com.nykaa.ehcache.config;
 
 import com.github.benmanes.caffeine.cache.Caffeine;
 import org.springframework.cache.CacheManager;

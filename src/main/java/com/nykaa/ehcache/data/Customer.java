@@ -1,4 +1,4 @@
-package com.javadevjournal.data;
+package com.nykaa.ehcache.data;
 
 import java.io.Serializable;
 

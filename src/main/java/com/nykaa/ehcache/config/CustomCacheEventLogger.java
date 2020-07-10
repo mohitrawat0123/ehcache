@@ -1,4 +1,4 @@
-package com.javadevjournal.config;
+package com.nykaa.ehcache.config;
 
 import org.ehcache.event.CacheEvent;
 import org.ehcache.event.CacheEventListener;

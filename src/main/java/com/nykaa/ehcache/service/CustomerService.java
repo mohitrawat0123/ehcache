@@ -1,6 +1,6 @@
-package com.javadevjournal.service;
+package com.nykaa.ehcache.service;
 
-import com.javadevjournal.data.Customer;
+import com.nykaa.ehcache.data.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,7 @@ public class CustomerService {
         customer.setCustomerId(id);
         customer.setFirstName("Test");
         customer.setLastName("User");
-        customer.setEmail("contact-us@javadevjournlal.com");
+        customer.setEmail("abc@nykaa.com");
         return  customer;
     }
 
@@ -40,7 +40,7 @@ public class CustomerService {
             customer.setCustomerId(Long.valueOf(i));
             customer.setFirstName("FirstName"+i);
             customer.setLastName("LastName"+i);
-            customer.setEmail("contact-us@javadevjournlal.com"+i);
+            customer.setEmail("abc@nykaa.com"+i);
             customers.add(customer);
         }
         return customers;

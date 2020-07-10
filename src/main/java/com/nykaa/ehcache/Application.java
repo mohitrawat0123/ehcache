@@ -1,16 +1,13 @@
-package com.javadevjournal;
+package com.nykaa.ehcache;
 
-import org.ehcache.xml.XmlConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.CacheManager;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SpringBootWithEhcacheApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootWithEhcacheApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 //    @Bean
