@@ -28,7 +28,7 @@ public class CustomerController {
     }
 
     @GetMapping("/cache/clear/{name}")
-    public ResponseEntity<String> clearCache(@PathVariable(name = "cacheName") String cacheName){
+    public ResponseEntity<String> clearCache(@PathVariable(name = "name") String cacheName){
         cacheManager.getCache(cacheName).clear();
         return ResponseEntity.ok("Cleared...");
     }
