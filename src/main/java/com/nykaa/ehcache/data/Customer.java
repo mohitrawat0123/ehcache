@@ -4,16 +4,16 @@ import java.io.Serializable;
 
 public class Customer implements Serializable {
 
-    private Long customerId;
+    private String customerId;
     private String firstName;
     private String lastName;
     private String email;
 
-    public Long getCustomerId() {
+    public String getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(Long customerId) {
+    public void setCustomerId(String customerId) {
         this.customerId = customerId;
     }
 

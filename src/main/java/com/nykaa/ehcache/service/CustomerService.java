@@ -19,9 +19,8 @@ public class CustomerService {
 
     private static final Logger LOG = LoggerFactory.getLogger(CustomerService.class);
 
-    @Cacheable(cacheNames = "customer",key="#id")
-    public Customer getCustomer(final Long id){
-
+    @Cacheable(cacheNames = "customerCache", key="#id")
+    public Customer getCustomer(String id){
         LOG.info("Returning customer information for customer id {} ",id);
         Customer customer = new Customer();
         customer.setCustomerId(id);
@@ -37,7 +36,7 @@ public class CustomerService {
         LOG.info("Returning customer list");
         for(int i=0; i< 4; i++){
             Customer customer = new Customer();
-            customer.setCustomerId(Long.valueOf(i));
+            customer.setCustomerId(String.valueOf(i));
             customer.setFirstName("FirstName"+i);
             customer.setLastName("LastName"+i);
             customer.setEmail("abc@nykaa.com"+i);
